@@ -8,9 +8,11 @@ fi
 PROJECT_NAME=$1
 BASEDIR=$(dirname "$0")
 
-echo 'create project:' $PROJECT_NAME '...'
+# === install/upgrade hex ===
+mix local.hex
 
 # === init ===
+echo 'create project:' $PROJECT_NAME '...'
 mix phoenix.new $PROJECT_NAME --no-brunch --no-ecto --database mysql
 echo "# Vim\n*~\n*swp" >> $PROJECT_NAME/.gitignore
 
