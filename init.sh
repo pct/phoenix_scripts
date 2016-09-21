@@ -13,7 +13,7 @@ mix local.hex
 
 # === init ===
 echo 'create project:' $PROJECT_NAME '...'
-mix phoenix.new $PROJECT_NAME --no-ecto --database mysql
+mix phoenix.new $PROJECT_NAME --database mysql
 echo "# Vim\n*~\n*swp" >> $PROJECT_NAME/.gitignore
 
 # === git ===
