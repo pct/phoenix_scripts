@@ -4,3 +4,20 @@
 ====
 iex:
 `:observer.start`
+
+Code School, Elixir
+
+部署方式：
+1. nginx proxy http://www.phoenixframework.org/v0.13.0/docs/deployment
+2. Exrm http://www.phoenixframework.org/v0.13.0/docs/advanced-deployment
+
+====
+
+https://github.com/jeremyjh/dialyxir
+
+https://github.com/rrrene/credo
+
+
+
+
+
