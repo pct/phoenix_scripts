@@ -17,7 +17,7 @@ https://github.com/jeremyjh/dialyxir
 
 https://github.com/rrrene/credo
 
-
+https://github.com/h4cc/awesome-elixir
 
 
 
