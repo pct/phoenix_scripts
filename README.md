@@ -24,3 +24,7 @@ https://elixirschool.com/cn/
 https://www.phoenix-china.org/
 
 http://elixir-cn.com/
+
+https://github.com/elixir-maru/maru
+
+https://github.com/smpallen99/ex_admin
