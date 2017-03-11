@@ -21,3 +21,6 @@ https://github.com/h4cc/awesome-elixir
 
 https://elixirschool.com/cn/
 
+https://www.phoenix-china.org/
+
+http://elixir-cn.com/
