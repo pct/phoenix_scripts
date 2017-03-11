@@ -13,6 +13,7 @@ Code School, Elixir
 
 ====
 
+## Elixir
 https://github.com/jeremyjh/dialyxir
 
 https://github.com/rrrene/credo
@@ -28,3 +29,6 @@ http://elixir-cn.com/
 https://github.com/elixir-maru/maru
 
 https://github.com/smpallen99/ex_admin
+
+## Auth
+https://github.com/smpallen99/coherence
