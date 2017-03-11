@@ -19,5 +19,5 @@ https://github.com/rrrene/credo
 
 https://github.com/h4cc/awesome-elixir
 
-
+https://elixirschool.com/cn/
 
