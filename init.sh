@@ -14,7 +14,7 @@ mix local.hex
 
 # === init ===
 echo '=== create project:' $PROJECT_NAME '==='
-mix phoenix.new $PROJECT_NAME --database mysql
+mix phx.new $PROJECT_NAME --database mysql
 echo "# Vim\n*~\n*swp" >> $PROJECT_NAME/.gitignore
 
 # === git ===
@@ -28,4 +28,4 @@ echo "Projejct '$PROJECT_NAME' created! You could:"
 echo "[1] cd $PROJECT_NAME"
 echo "[2] edit 'config/dev.exs' for development db settings"
 echo "[3] use 'mix ecto.create' to create development db"
-echo "[4] use 'mix phoenix.server' to start phoenix server"
+echo "[4] use 'mix phx.server' to start phoenix server"
