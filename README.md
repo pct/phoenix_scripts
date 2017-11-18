@@ -32,3 +32,6 @@ https://github.com/smpallen99/ex_admin
 
 ## Auth
 https://github.com/smpallen99/coherence
+
+## Customise scaffolding
+https://medium.com/@mutablestate/customise-your-phoenix-html-generator-d45fecd48683
