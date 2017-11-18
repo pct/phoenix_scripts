@@ -35,3 +35,6 @@ https://github.com/smpallen99/coherence
 
 ## Customise scaffolding
 https://medium.com/@mutablestate/customise-your-phoenix-html-generator-d45fecd48683
+
+## Awesome Elixir
+https://github.com/h4cc/awesome-elixir
