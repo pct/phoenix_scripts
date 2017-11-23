@@ -14,12 +14,18 @@ mix local.hex
 
 # === init ===
 echo '=== create project:' $PROJECT_NAME '==='
-mix phx.new $PROJECT_NAME --database mysql
+mix phx.new $PROJECT_NAME
 echo "# Vim\n*~\n*swp" >> $PROJECT_NAME/.gitignore
 
 # === git ===
 cd $PROJECT_NAME
 git init; git add .; git commit -m 'init'
+
+# === phxauth ===
+mix archive.install https://github.com/riverrun/phauxth_installer/raw/master/archives/phauxth_new.ez
+mix phauxth.new --confirm --remember --no-backups
+mix deps.get
+
 
 # === done ===
 echo "=== done ==="
