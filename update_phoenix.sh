@@ -1,4 +1,4 @@
 #!/bin/sh
 
-# 1.3
-mix archive.install https://github.com/phoenixframework/archives/raw/master/phx_new.ez
+mix local.hex
+mix archive.install hex phx_new 1.5.3
