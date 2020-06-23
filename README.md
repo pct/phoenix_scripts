@@ -1,5 +1,13 @@
-參考：https://github.com/thechangelog/changelog.com
-累積 basement
+# 基本步驟
+
+    $ mix phx.new hello
+      修改 config/dev.exs
+    $ mix ecto.create
+    $ mix phx.server
+
+
+# 參考
+- https://github.com/thechangelog/changelog.com
 
 ====
 iex:
