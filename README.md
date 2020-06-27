@@ -39,7 +39,7 @@ https://github.com/elixir-maru/maru
 https://github.com/smpallen99/ex_admin
 
 ## Auth
-https://github.com/smpallen99/coherence
+- https://github.com/aaronrenner/phx_gen_auth
 
 ## Customise scaffolding
 https://medium.com/@mutablestate/customise-your-phoenix-html-generator-d45fecd48683
@@ -52,3 +52,7 @@ https://github.com/h4cc/awesome-elixir
 ## 查看有哪些 phx 指令
 
     $ mix phx
+
+## 查看有哪些 ecto 指令
+
+    $ mix ecto
