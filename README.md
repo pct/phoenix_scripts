@@ -40,6 +40,8 @@ https://github.com/smpallen99/ex_admin
 
 ## Auth
 - https://github.com/aaronrenner/phx_gen_auth
+- 說明：https://hexdocs.pm/phx_gen_auth/overview.html
+- 如果作為後台認證，記得拔掉 register
 
 ## Customise scaffolding
 https://medium.com/@mutablestate/customise-your-phoenix-html-generator-d45fecd48683
