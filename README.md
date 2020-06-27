@@ -46,3 +46,9 @@ https://medium.com/@mutablestate/customise-your-phoenix-html-generator-d45fecd48
 
 ## Awesome Elixir
 https://github.com/h4cc/awesome-elixir
+
+----
+
+## 查看有哪些 phx 指令
+
+    $ mix phx
