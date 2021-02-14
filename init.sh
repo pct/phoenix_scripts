@@ -10,6 +10,7 @@ BASEDIR=$(dirname "$0")
 
 # === install/upgrade hex ===
 echo '=== install/upgrade hex ==='
+mix local.hex
 mix archive.install hex phx_new
 
 # === init ===
@@ -20,12 +21,6 @@ echo "# Vim\n*~\n*swp" >> $PROJECT_NAME/.gitignore
 # === git ===
 cd $PROJECT_NAME
 git init; git add .; git commit -m 'init'
-
-# === phauxth ===
-#https://github.com/riverrun/phauxth-example
-#mix archive.install https://github.com/riverrun/phauxth_installer/raw/master/archives/phauxth_new.ez
-#mix phauxth.new --confirm --remember --no-backups
-#mix deps.get
 
 
 # === done ===
