@@ -15,8 +15,12 @@ mix archive.install hex phx_new
 
 # === init ===
 echo '=== create project:' $PROJECT_NAME '==='
-mix phx.new $PROJECT_NAME --database mysql
+mix phx.new $PROJECT_NAME --database mysql --live
 echo "# Vim\n*~\n*swp" >> $PROJECT_NAME/.gitignore
+
+# === copy scripts ===
+
+cp -rpf $BASEDIR/scripts $PROJECT_NAME/priv
 
 # === git ===
 cd $PROJECT_NAME
