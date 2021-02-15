@@ -43,10 +43,10 @@ $ mix phx.server
 
 * https://hexdocs.pm/phoenix/overview.html
 
-## scaffolding
+## scaffolding  (注意 —web Admins 就可以把放在 _web 的檔案都加上 admins 目錄)
 
 ```
-$ mix phx.gen.html Blog Post posts title body:text
+$ mix phx.gen.html Posts Post posts title body:text --web Admins
 ```
 
 ## deploy step1 - secret
