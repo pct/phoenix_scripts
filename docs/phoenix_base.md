@@ -49,6 +49,12 @@ $ mix phx.server
 $ mix phx.gen.html Posts Post posts title body:text --web Admins
 ```
 
+###References
+
+```
+$ mix phx.gen.schema Blog.Post blog_posts title user_id:references:users
+```
+
 ## deploy step1 - secret
 
 ```
