@@ -1,6 +1,12 @@
 #!/bin/sh
 export MIX_ENV=prod
 
+# mix phx.gen.secret
+export SECRET_KEY_BASE=REALLY_LONG_SECRET
+
+# database
+export DATABASE_URL=ecto://USER:PASS@HOST/database
+
 # Initial setup
 mix deps.get --only prod
 mix compile
