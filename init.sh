@@ -19,8 +19,10 @@ mix phx.new $PROJECT_NAME --database mysql
 echo "# Vim\n*~\n*swp" >> $PROJECT_NAME/.gitignore
 
 # === copy scripts ===
-
 cp -rpf $BASEDIR/scripts $PROJECT_NAME/priv
+
+# === copy scripts ===
+cp -rpf $BASEDIR/config $PROJECT_NAME/config
 
 # === git ===
 cd $PROJECT_NAME
