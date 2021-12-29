@@ -6,8 +6,7 @@ mix deps.get --only prod
 mix compile
 
 # Compile assets
-npm run deploy --prefix ./assets
-mix phx.digest
+mix assets.deploy
 
 # Custom tasks (like DB migrations)
 mix ecto.migrate
