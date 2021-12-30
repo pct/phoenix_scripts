@@ -1,7 +1,3 @@
-phx_gen_auth
-
-https://github.com/aaronrenner/phx_gen_auth
-
 ```
 $ mix phx.gen.auth Admins Admin admins --web Admins
 $ mix ecto.create
@@ -15,4 +11,10 @@ $ mix ecto.migrate
 
     get "/admins/register", AdminRegistrationController, :new
     post "/admins/register", AdminRegistrationController, :create
+
+
+----
+
+Accounts.register_user( %{email: "", password: ""} )
+
 
