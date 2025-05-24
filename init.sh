@@ -1,39 +1,39 @@
 #!/bin/sh
+# Phoenix 專案初始化腳本（自動保持 Hex 與 phx_new 最新）
 
 if [ $# -eq 0 ]; then
   echo 'Please input <project-name>'
-  exit
+  exit 1
 fi
 
 PROJECT_NAME=$1
 BASEDIR=$(dirname "$0")
 
-# === install/upgrade hex ===
-echo '=== install/upgrade hex ==='
-mix local.hex
-mix archive.install hex phx_new
+# === Always update Hex and Phoenix installer ===
+echo '=== Updating Hex and Phoenix installer ==='
+mix local.hex --force
+mix archive.install --force hex phx_new
 
-# === init ===
-echo '=== create project:' $PROJECT_NAME '==='
-mix phx.new $PROJECT_NAME --database mysql
-echo "# Vim\n*~\n*swp" >> $PROJECT_NAME/.gitignore
+# === Create Phoenix project ===
+echo "=== Creating project: $PROJECT_NAME ==="
+mix phx.new $PROJECT_NAME --database mysql --no-install
 
-# === copy scripts ===
-cp -rpf $BASEDIR/scripts $PROJECT_NAME/priv
+echo -e "# Vim\n*~\n*.swp" >> $PROJECT_NAME/.gitignore
 
-# === copy scripts ===
-cp -rpf $BASEDIR/config $PROJECT_NAME/config
+# === Copy scripts/config if present ===
+[ -d "$BASEDIR/scripts" ] && cp -rpf "$BASEDIR/scripts" "$PROJECT_NAME/priv"
+[ -d "$BASEDIR/config" ] && cp -rpf "$BASEDIR/config" "$PROJECT_NAME/config"
 
-# === git ===
-cd $PROJECT_NAME
-git init; git add .; git commit -m 'init'
+# === Git init ===
+cd "$PROJECT_NAME"
+git init
+ git add .
+git commit -m 'init'
 
-
-# === done ===
-echo "=== done ==="
-echo "\n\n"
-echo "Projejct '$PROJECT_NAME' created! You could:"
+# === Done ===
+echo "\n=== DONE ===\n"
+echo "Project '$PROJECT_NAME' created! Next steps:"
 echo "[1] cd $PROJECT_NAME"
-echo "[2] edit 'config/dev.exs' for development db settings"
-echo "[3] use 'mix ecto.create' to create development db"
-echo "[4] use 'mix phx.server' to start phoenix server"
+echo "[2] edit config/dev.exs for DB settings"
+echo "[3] mix deps.get && mix ecto.create"
+echo "[4] mix phx.server"
